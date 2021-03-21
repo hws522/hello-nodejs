@@ -9,3 +9,7 @@ function isEmptyObj() {
     return false;
   }
 }
+
+const isEmptyObj = () => (obj.title ? true : false);
+
+isEmptyObj();
