@@ -124,3 +124,50 @@ npx 는 npm 처럼 설치 후 실행하는 목적이 아니라, 설치하지않�
 ex) `npx cowsay "hello"`
 
 <br>
+
+### **NODEMON**
+
+---
+
+nodemon 은 파일에 변화가 생기면 자동으로 변화를 감지하여 실행한다.
+
+`"npm i nodemon -g"` 를 이용하여 nodemon 을 설치한다.
+
+<br>
+
+### **Module.exports**
+
+---
+
+module.exports 는 객체로 받을 수 있고, 단일로 받을 경우 함수나 클래스를 바로 외부로 export 할 수 있다.
+
+```js
+function edit() {}
+function write() {}
+
+module.exports = {
+  edit,
+  write,
+};
+
+class update {}
+
+module.exports = write;
+module.exports = update;
+```
+
+module.exports 는 단순히 함수를 외부를 호출하는 것 말고도 환경설정과 같은 외부 데이터를 접근 하기 위해 사용할 수 있다.
+
+```js
+module.exports = {
+  id: "",
+  token: "",
+  fn: () => {
+    console.log("this is a function");
+  },
+};
+```
+
+단일 파일로 모듈을 export 하게 된다면, 외부 환경변수와 같은 정보들을 config 파일로 엮어서 표현하기가 매우 좋다는 장점이 있다.
+
+<br>
