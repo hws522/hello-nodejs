@@ -171,3 +171,31 @@ module.exports = {
 단일 파일로 모듈을 export 하게 된다면, 외부 환경변수와 같은 정보들을 config 파일로 엮어서 표현하기가 매우 좋다는 장점이 있다.
 
 <br>
+
+### **Event Loop**
+
+---
+
+기초 자료구조
+
+**queue**
+
+```js
+// QUEUE - FIFO
+const queue = [];
+queue.push(1);
+queue.push(2);
+console.log(queue);
+const q = queue.shift();
+console.log(q);
+```
+
+```js
+// STACK - LIFO
+const stack = [];
+stack.push(1);
+stack.push(2);
+console.log(stack);
+const s = stack.pop();
+console.log(s);
+```
