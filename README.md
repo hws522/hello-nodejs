@@ -199,3 +199,25 @@ console.log(stack);
 const s = stack.pop();
 console.log(s);
 ```
+
+<br>
+
+### **every**
+
+---
+
+특정한 배열에서 어떠한 조건에 대해 모두 만족할 경우를 체크할 때 사용한다.
+
+```js
+const arr = [2, 3, 4];
+
+const t = arr.every((key) => key > 2);
+
+console.log(t);
+
+// false
+```
+
+every 는 백엔드 뿐만 아니라 프론트엔드 에서도 사용 할 수 있다. (페이지 렌더링 같은 작업 등 선택적인 코드 수행)
+
+<br>
