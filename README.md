@@ -247,3 +247,34 @@ console.log(res);
 `해당하는 값을 찾고 실제 데이터를 리턴하려면 find, 해당하는 값이 존재하는지만 확인하려면 includes.`
 
 <br>
+
+### **forEach**
+
+---
+
+현업에서 자주 사용하는 것들 중 하나다.
+
+for 문과 크게 다르지 않지만 가독성 측면에서 좋은 방법이기 때문이다.
+
+forEach 내부에서 실행되는 코드들은 비동기로 실행되지 않기 때문에, 비동기 코드들을 수행할 때 주의 하여야 한다.
+
+```js
+const arr = [1, 2, 3];
+const newArr = [];
+
+arr.forEach((item) => console.log(item));
+
+// 1
+// 2
+// 3
+
+arr.forEach((item) => {
+  newArr.push(item);
+});
+
+console.log(newArr);
+
+// [1, 2, 3]
+```
+
+<br>
