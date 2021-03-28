@@ -238,7 +238,7 @@ console.log(ret);
 
 // 올인원
 
-const res = arr.includes((key) => key === "node.js");
+const res = arr.includes("node.js");
 console.log(res);
 
 // true
@@ -278,3 +278,27 @@ console.log(newArr);
 ```
 
 <br>
+
+### **Map, Filter**
+
+---
+
+**Map** : 배열 내의 모든 요소에 대하여 주어진 함수를 호출한 결과를 모아, 새로운 배열을 반환한다.
+
+```js
+const a = [1, 2, 3];
+const b = a.map((x) => x + 1);
+console.log(b);
+
+// [2, 3, 4]
+```
+
+**Filter** : 주어진 함수의 테스트를 통과하는 모든 요소를 모아, 새로운 배열을 반환한다.
+
+```js
+const a = [1, 2, 3];
+const f = a.filter((x) => x > 1);
+console.log(f);
+
+// [2, 3]
+```
