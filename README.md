@@ -221,3 +221,29 @@ console.log(t);
 every 는 백엔드 뿐만 아니라 프론트엔드 에서도 사용 할 수 있다. (페이지 렌더링 같은 작업 등 선택적인 코드 수행)
 
 <br>
+
+### **Find, Includes**
+
+---
+
+**Find** : 설정된 배열에 대해서 특정한 요소를 찾아서 반환 하는 것.
+
+**Includes** : 특정한 문자열이나 배열에 대해 조건을 걸어서 그 조건을 만족하는 것이 있는지 true, false 로 반환 하는것.
+
+```js
+const arr = ["node.js", "올인원"];
+
+const ret = arr.find((key) => key === "올인원");
+console.log(ret);
+
+// 올인원
+
+const res = arr.includes((key) => key === "node.js");
+console.log(res);
+
+// true
+```
+
+`해당하는 값을 찾고 실제 데이터를 리턴하려면 find, 해당하는 값이 존재하는지만 확인하려면 includes.`
+
+<br>
