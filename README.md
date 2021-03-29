@@ -448,3 +448,28 @@ console.log(res);
 ```
 
 <br>
+
+### **Template String**
+
+---
+
+<br>
+
+ES6 이전 template string 이 없었을 때 다수의 라인을 입력하거나, 문자내에 변수를 입력할 때 + 와 같은 다른 기호를 사용하여 문자열을 조정했다. Template string 을 이용하면 하나의 문자열 내에서 변수, 상수, 기존의 데이터를 통합하여 표현이 가능하다.
+
+```js
+const details = "자세한 내용";
+
+let str = "node.js";
+str += `올인원` + `기존 방법`; // 기존
+
+str += `올인원 ${details}`; // template string
+
+const int = 1;
+
+str += `${str}의 값은 ${int}`;
+```
+
+사용자체는 간단하지만 매우 많이 사용된다.
+
+<br>
