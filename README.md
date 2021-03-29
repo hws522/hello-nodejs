@@ -365,3 +365,39 @@ console.log(ret);
 ```
 
 <br>
+
+### **Set**
+
+---
+
+**Set** : 우리는 개발을 하다보면, 방대한 자료들 중 중복되지 않는 데이터만을 수집하고 싶을 때가 있다. set 이라는 내장된 자료구조를 이용하면 쉽게 구현할 수 있다.
+
+```js
+const test = new Set();
+
+test.add(1); // add 를 이용하여 데이터를 입력받는다.
+test.add(1);
+test.add(2);
+test.add(2);
+test.add(3);
+
+for (const item of test) {
+  // for-of 문을 이용하여 내부를 순회한다.
+  console.log(item);
+}
+
+// 1
+// 2
+// 3
+```
+
+이렇게 중복되지 않고 입력되는지 확인할 때 사용하는 만큼, 실제로 Set 자료구조 안에 데이터가 존재하는지에 대한 조건의 메소드도 존재한다.
+
+그 메소드가 `has` 다.
+
+```js
+const ret = test.has(2);
+console.log(ret);
+
+// true
+```
