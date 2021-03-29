@@ -302,3 +302,66 @@ console.log(f);
 
 // [2, 3]
 ```
+
+<br>
+
+### **Object.assign vs Spread**
+
+---
+
+<br>
+
+**Object.assign** : 말 그대로 할당이라는 의미이다.
+
+```js
+const obj = {
+  title: "node.js 올인원",
+};
+
+const newObj = {
+  name: "node.js 온라인",
+};
+
+const ret = Object.assign({}, obj, newObj);
+console.log(ret);
+
+// {title: 'node.js 올인원', name: 'node.js 온라인'}
+```
+
+**spread** : Object.assign 대신 spread 를 사용하는 이유는 가독성측면에서 더 좋기 때문이다.
+
+`...` 뒤에 합칠 object들을 적어주면 된다.
+
+```js
+const obj = {
+  title: "node.js 올인원",
+};
+
+const newObj = {
+  name: "node.js 온라인",
+};
+
+const ret = {
+  // 새로운 객체 생성이기 때문에 {} 형식이다.
+  ...obj,
+  ...newObj,
+};
+
+console.log(ret);
+
+// {title: 'node.js 올인원', name: 'node.js 온라인'}
+```
+
+spread 연산자의 특징은 객체뿐만 아니라 배열에서도 사용가능하다는 점이다.
+
+```js
+const arr = [1, 2, 3];
+const arr2 = [4, 5, 6];
+
+const ret = [...arr, ...arr2]; //새로운 배열 생성이기 때문에 [] 형식이다.
+console.log(ret);
+
+// [1, 2, 3, 4, 5, 6]
+```
+
+<br>
