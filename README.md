@@ -508,3 +508,29 @@ console.log(ret);
 ```
 
 <br>
+
+### **Type Checking**
+
+---
+
+<br>
+
+자바스크립트에선 변수나 상수를 선언할 때, 타입에 대해선 정의하지 않는다.
+
+하지만 타입에 대해서 확인을 하거나 데이터를 변환할 경우에 이전 데이터의 값을 정확히 예상하기 위해 타입의 원래 속성을 확인해야 할 필요가 있다.
+
+내장된 typeof 메소드를 이용하면 손쉽게 구현할 수 있다.
+
+```js
+const string = "node.js";
+const array = [];
+const obj = {};
+const number = 1;
+
+console.log(typeof string);
+console.log(typeof array);
+console.log(typeof obj);
+console.log(typeof number);
+```
+
+<br>
