@@ -473,3 +473,38 @@ str += `${str}의 값은 ${int}`;
 사용자체는 간단하지만 매우 많이 사용된다.
 
 <br>
+
+### **String**
+
+---
+
+<br>
+
+template string 과의 기본적인 차이는 template string 은 문자열 뿐만 아니라 상수, 변수, 데이터까지 조작가능한 반면 string 은 단순한 문자열에 대한 메소드와 객체, 여러 기능을 포함하고 있다.
+
+string 은 별도로 선언하지 않아도 된다.
+
+실제로 사용되는 데이터가 변할것인지, 일관성있게 사용될 것인지만 고려하면 된다.
+
+데이터를 선언하는 방법에는 const, let 이 있기 때문이다.
+
+```js
+let string = "node.js 올인원 패키지";
+
+let isStartWith = string.startsWith("n"); // 문자열 시작단어가 'n' 인지.
+
+let isIncludes = string.includes("올인원"); // 문자열안에 '올인원' 이 포함되는지.
+
+let isEndWith = string.endsWith("지"); // 문자열 끝단어에 '지' 인지
+
+const checkIfContains = () => {
+  if (isStartWith && isIncludes && isEndWith) {
+    return true;
+  }
+};
+
+const ret = checkIfContains();
+console.log(ret);
+```
+
+<br>
