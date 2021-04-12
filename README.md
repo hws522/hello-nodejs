@@ -534,3 +534,31 @@ console.log(typeof number);
 ```
 
 <br>
+
+### **Hoisting**
+
+---
+
+<br>
+
+hoisting 은 자바스크립트에서 생성 및 실행단계가 어떻게 동작하는가에 대한 일반적인 생각이다.
+
+```js
+function say(word) {
+  console.log(word);
+}
+
+say("hi");
+```
+
+일반적으로 함수를 선언 후에 실행하지만, 자바스크립트에서는 변수 및 함수선언이 컴파일단계에서 메모리에 저장되므로 함수선언전에 실행을 해도 문제없이 실행된다.
+
+```js
+say("hi");
+
+function say(word) {
+  console.log(word);
+}
+```
+
+<br>
