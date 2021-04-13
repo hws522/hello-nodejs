@@ -650,8 +650,34 @@ console.log("a");
 
 <br>
 
-###
+### **Arrow Functions**
 
+---
+
+<br>
+
+직역하면 화살표 함수다.
+
+람다식과 같은 유사한 방식이 자바스크립트에선 arrow function 이다.
+
+ES6에서 가장 많이 사용되는 문법 중 하나로, 아주 중요한 함수이다.
+
+코드 가독성 외에 this 를 사용함으로써 갖는 근본적인 불편함을 해소시켜 줄 수 있다.
+
+```js
+function add(var1, var2) {
+  return var1 + var2;
+}
+
+// 기존 함수 생성 방법
 ```
 
+```js
+const add(var1, var2) => var1 + var2
+
+console.log(add(1, 2))
+
+// 실행 결과 : 3
+
+// arrow function
 ```
