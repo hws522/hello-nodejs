@@ -625,8 +625,33 @@ try-catch 구문을 이용하여 에러를 컨트롤 할 수 있다.
 
 ```js
 try {
-  a;
+  a; // 정의 되지 않았으므로 에러발생
 } catch (e) {
-  console.log("ERROR" + e);
+  console.log("ERROR " + e); //에러 발생 시, catch 실행.
 }
+
+// 실행결과 : ERROR ReferenceError: a is not defined
+```
+
+```js
+a;
+console.log("a");
+// a 에서 오류가 나더라도 console.log('a') 문장을 실행시키려면,
+
+try {
+  a;
+} catch (e) {}
+console.log("a");
+
+// {} 안에 내용이 없는 이유는 에러메세지를 표시하라는 조건이 없기 때문이다.
+
+// 실행 결과 : a
+```
+
+<br>
+
+###
+
+```
+
 ```
