@@ -614,3 +614,19 @@ setInterval(() => {
 ```
 
 <br>
+
+### **Error handing**
+
+---
+
+<br>
+
+try-catch 구문을 이용하여 에러를 컨트롤 할 수 있다.
+
+```js
+try {
+  a;
+} catch (e) {
+  console.log("ERROR" + e);
+}
+```
